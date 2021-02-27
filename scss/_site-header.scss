@@ -1,0 +1,21 @@
+.site_header {
+    & .site_header__heading {
+        & .site_header__heading--link {
+            @include text_ident;
+            background-image: url('../images/logo.svg');
+            background-repeat: no-repeat;
+            background-size: 30%;
+            background-position: left;
+        }
+    }
+    & .navigation {
+        & .navigation_list {
+            & .navigation_list__items {
+                & .navigation_list__items--link {
+                    @include menu_link;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

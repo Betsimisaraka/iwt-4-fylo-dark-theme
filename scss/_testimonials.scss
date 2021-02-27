@@ -1,0 +1,15 @@
+.testimonials {
+    & .testimonial_list {
+        & .testimonials_list__items {
+            & .testimonials_list__items--name {
+                @include testimonial_name;
+            }
+            & .testimonials_list__items--paragraph {
+                @include testimonial_paragraph;
+            }
+            & .testimonials_list__items--job {
+                @include testimonial_job;
+            }
+        }
+    }
+}

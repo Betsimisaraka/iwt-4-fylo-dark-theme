@@ -2,4 +2,27 @@
 
 html {
     font-family: $font-family;
+    font-size: var(--base-font-size);
+}
+
+body {
+    background-color: var(--main-background);
+    color: var(--font-color);
+}
+
+// body, h1, h2, h3, h4, p, ul, li {
+//     margin: 0;
+//     padding: 0;
+// }
+
+ul {
+    list-style: none;
+}
+
+.article_heading {
+    @include article_heading;
+}
+
+.article_paragraph {
+    @include article_paragraph;
 }

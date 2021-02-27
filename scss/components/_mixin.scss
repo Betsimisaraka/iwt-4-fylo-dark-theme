@@ -16,3 +16,65 @@
     display: block;
     text-indent: -9999px;
 }
+
+@mixin bg_heading {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc((var(--base-font-size) * 2));
+    line-height: calc((var(--base-line-height) * 1.5));
+}
+
+@mixin menu_link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--base-font-size) + 2px);
+    line-height: (var(--base-line-height));
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+@mixin article_heading {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc((var(--base-font-size) * 1.5));
+    line-height: calc((var(--base-line-height) * 2));
+}
+
+@mixin article_paragraph {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--base-font-size) + 2px);
+    line-height: var(--base-line-height);
+    opacity: 0.8;
+}
+
+@mixin testimonial_name {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc((var(--base-font-size) + 4px));
+    line-height: calc((var(--base-line-height) + 4px));
+    opacity: 0.9;
+}
+
+@mixin testimonial_paragraph {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    opacity: 0.8;
+}
+
+@mixin testimonial_job {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--base-font-size);
+    line-height: calc(var(--base-line-height) - 6px);
+    opacity: 0.6;
+}

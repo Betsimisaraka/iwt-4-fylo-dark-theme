@@ -1,0 +1,18 @@
+.footer {
+    background-color: var(--footer-background);
+    & .footer_contact {
+        & .footer_contact__phone, .footer_contact__email {
+            @include testimonial_paragraph;
+        }
+    }
+    & .footer_heading a {
+        @include text_ident;
+        background-image: url('../images/logo.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    & .footer_menu li a, .footer_more_info li a {
+        @include menu_link;
+        opacity: 0.8;
+    }
+}

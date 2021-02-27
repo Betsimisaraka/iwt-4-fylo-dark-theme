@@ -1,2 +1,129 @@
+:root {
+  --base-font-size: 14px;
+  --email-background: #1c2431;
+  --main-background: #181f2a;
+  --footer-background: #0b1523;
+  --testimonials-background: #202a3c;
+  --call-action1: #65e2d9;
+  --call-action2: #339ecc;
+  --error-color: #ff4242;
+  --font-color: white;
+  --base-margin: 22px;
+  --base-padding: 42px;
+  --base-font-size: 14px;
+  --base-line-height: 24px; }
+
+:root {
+  --base-font-size: 14px;
+  --email-background: #1c2431;
+  --main-background: #181f2a;
+  --footer-background: #0b1523;
+  --testimonials-background: #202a3c;
+  --call-action1: #65e2d9;
+  --call-action2: #339ecc;
+  --error-color: #ff4242;
+  --font-color: white;
+  --base-margin: 22px;
+  --base-padding: 42px;
+  --base-font-size: 14px;
+  --base-line-height: 24px; }
+
 html {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: var(--base-font-size); }
+
+body {
+  background-color: var(--main-background);
+  color: var(--font-color); }
+
+ul {
+  list-style: none; }
+
+.article_heading {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc((var(--base-font-size) * 1.5));
+  line-height: calc((var(--base-line-height) * 2)); }
+
+.article_paragraph {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(var(--base-font-size) + 2px);
+  line-height: var(--base-line-height);
+  opacity: 0.8; }
+
+.site_header .site_header__heading .site_header__heading--link {
+  display: block;
+  text-indent: -9999px;
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: left; }
+
+.site_header .navigation .navigation_list .navigation_list__items .navigation_list__items--link {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(var(--base-font-size) + 2px);
+  line-height: var(--base-line-height);
+  color: var(--font-color);
+  text-decoration: none;
+  opacity: 0.6; }
+
+.masthead .masthead_heading {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc((var(--base-font-size) * 2));
+  line-height: calc((var(--base-line-height) * 1.5)); }
+
+.testimonials .testimonial_list .testimonials_list__items .testimonials_list__items--name {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc((var(--base-font-size) + 4px));
+  line-height: calc((var(--base-line-height) + 4px));
+  opacity: 0.9; }
+
+.testimonials .testimonial_list .testimonials_list__items .testimonials_list__items--paragraph {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  opacity: 0.8; }
+
+.testimonials .testimonial_list .testimonials_list__items .testimonials_list__items--job {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--base-font-size);
+  line-height: calc(var(--base-line-height) - 6px);
+  opacity: 0.6; }
+
+.footer {
+  background-color: var(--footer-background); }
+  .footer .footer_contact .footer_contact__phone, .footer .footer_contact .footer_contact__email {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    opacity: 0.8; }
+  .footer .footer_heading a {
+    display: block;
+    text-indent: -9999px;
+    background-image: url("../images/logo.svg");
+    background-repeat: no-repeat;
+    background-position: left; }
+  .footer .footer_menu li a, .footer .footer_more_info li a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--base-font-size) + 2px);
+    line-height: var(--base-line-height);
+    color: var(--font-color);
+    text-decoration: none;
+    opacity: 0.8; }

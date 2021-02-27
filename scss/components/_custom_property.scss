@@ -1,0 +1,17 @@
+:root {
+    --base-font-size: #{$base-font-size};
+    --email-background: #{$intro-email-background};
+    --main-background: #{$main-background};
+    --footer-background: #{$footer-background};
+    --testimonials-background: #{$testimonials-background};
+    --call-action1: #{$call-to-action1};
+    --call-action2: #{$call-to-action2};
+    --error-color: #{$error};
+    --font-color: #{$white};
+
+    --base-margin: #{$base-margin};
+    --base-padding: #{$base-padding};
+
+    --base-font-size: #{$base-font-size};
+    --base-line-height: #{$base-line-height};
+}

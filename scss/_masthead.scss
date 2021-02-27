@@ -1,0 +1,5 @@
+.masthead {
+    & .masthead_heading {
+        @include bg_heading;
+    }
+}
