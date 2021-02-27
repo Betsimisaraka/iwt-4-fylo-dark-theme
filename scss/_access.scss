@@ -1,0 +1,11 @@
+.access {
+    background-color: var(--email-background);
+    & .access_form {
+        input {
+            border-radius: 30px;
+            background-color: var(--font-color);
+            border: none;
+            padding: 20px 72px;
+        }
+    }
+}

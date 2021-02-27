@@ -1,5 +1,30 @@
 .masthead {
+    padding-top: calc(var(--base-padding) * 2);
+    padding-bottom: calc(var(--base-padding) * 2);
+    & .image_container {
+        img {
+            width: 100%;
+        }
+    }
     & .masthead_heading {
+        padding-top: calc(var(--base-padding));
+        padding-bottom: calc(var(--base-padding) - 10px);
         @include bg_heading;
+    }
+    & .masthead_paragraph {
+        padding-bottom: calc(var(--base-padding) - 10px);
+    }
+}
+
+@media (min-width: 1000px) {
+    .masthead {
+        & .masthead_container {
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            & .masthead_heading {
+                @include bg_heading_desk;
+            }
+        }
     }
 }

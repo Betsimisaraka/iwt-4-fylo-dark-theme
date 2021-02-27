@@ -1,4 +1,4 @@
-@import "variables";
+// @import "variables";
 
 html {
     font-family: $font-family;
@@ -8,12 +8,13 @@ html {
 body {
     background-color: var(--main-background);
     color: var(--font-color);
+    text-align: center;
 }
 
-// body, h1, h2, h3, h4, p, ul, li {
-//     margin: 0;
-//     padding: 0;
-// }
+body, h1, h2, h3, h4, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+}
 
 ul {
     list-style: none;
@@ -25,4 +26,30 @@ ul {
 
 .article_paragraph {
     @include article_paragraph;
+}
+
+.container {
+    margin-left: var(--base-margin);
+    margin-right: var(--base-margin);
+}
+
+.started_button {
+    @include btn_font;
+    color: var(--font-color);
+    border-radius: 30px;
+    // background-color: var(--call-action2);
+    padding: 12px 72px;
+    border: none;
+    background-image: linear-gradient(180deg, var(--call-action2) 0%, var(--call-action1) 100%);
+}
+
+@media (min-width: 1000px) {
+    .container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .article_paragraph {
+        @include article_paragraph_desk;
+    }   
 }

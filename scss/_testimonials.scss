@@ -1,6 +1,14 @@
 .testimonials {
+    padding-top: calc(var(--base-padding) );
+    padding-bottom: calc(var(--base-padding) * 2);
     & .testimonial_list {
         & .testimonials_list__items {
+            background-color: var(--testimonials-background);
+            border-radius: 5px;
+            padding: 32px 32px;
+            & img {
+                border-radius: 50%;
+            }
             & .testimonials_list__items--name {
                 @include testimonial_name;
             }
@@ -9,6 +17,23 @@
             }
             & .testimonials_list__items--job {
                 @include testimonial_job;
+            }
+        }
+        & .testimonials_list__items + .testimonials_list__items {
+            margin-top: calc(var(--base-margin) + 10px);
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .testimonials {
+        padding-top: calc(var(--base-padding) );
+        padding-bottom: calc(var(--base-padding) * 2);
+        & .testimonial_list {
+           @include flex_row;
+            & .testimonials_list__items + .testimonials_list__items {
+                margin-top: unset;
+                margin-left: calc(var(--base-margin) + 10px);
             }
         }
     }

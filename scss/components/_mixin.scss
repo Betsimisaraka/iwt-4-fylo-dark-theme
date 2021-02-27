@@ -22,7 +22,15 @@
     font-style: normal;
     font-weight: 700;
     font-size: calc((var(--base-font-size) * 2));
-    line-height: calc((var(--base-line-height) * 1.5));
+    line-height: calc((var(--base-line-height) * 2));
+}
+
+@mixin bg_heading_desk {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc((var(--base-font-size) * 2.5));
+    line-height: calc((var(--base-line-height) * 2.5));
 }
 
 @mixin menu_link {
@@ -52,6 +60,15 @@
     opacity: 0.8;
 }
 
+@mixin article_paragraph_desk {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--base-font-size) + 4px);
+    line-height: calc(var(--base-line-height));
+    opacity: 0.8;
+}
+
 @mixin testimonial_name {
     font-family: 'Open Sans';
     font-style: normal;
@@ -77,4 +94,12 @@
     font-size: var(--base-font-size);
     line-height: calc(var(--base-line-height) - 6px);
     opacity: 0.6;
+}
+
+@mixin btn_font {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
 }
