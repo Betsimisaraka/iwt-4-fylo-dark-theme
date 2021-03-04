@@ -1,11 +1,56 @@
 .access {
-    background-color: var(--email-background);
-    & .access_form {
-        input {
-            border-radius: 30px;
-            background-color: var(--font-color);
-            border: none;
-            padding: 20px 72px;
+    & .access_conainer {
+        padding: var(--base-padding) calc(var(--base-padding) - 25px);
+        border-radius: 10px;
+        background-color: var(--email-background);
+        & .access_paragraph {
+            padding-top: calc(var(--base-padding) - 30px);
+            padding-bottom: calc(var(--base-padding) - 10px);
+        }
+        & .access_form {
+            & input {
+                border-radius: 30px;
+                background-color: var(--font-color);
+                border: none;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                width: 100%;
+                margin-bottom: var(--base-margin);
+            }
+            & input::placeholder {
+                padding-left: 25px;
+                opacity: 0.5;
+            }
+            & .form_button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .access {
+        & .access_conainer {
+            padding: var(--base-padding) calc(var(--base-padding) * 2);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            & .access_paragraph {
+                padding-top: calc(var(--base-padding) - 30px);
+                padding-bottom: calc(var(--base-padding) - 10px);
+            }
+            & .access_form {
+                @include flex_row;
+                & input {
+                    margin-bottom: unset;
+                    margin-right: calc(var(--base-margin) + 10px);
+                }
+                & .form_button {
+                    width: 300px;
+                    padding: 12px 42px;
+                    align-self: center;
+                }
+            }
         }
     }
 }

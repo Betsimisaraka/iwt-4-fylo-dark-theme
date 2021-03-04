@@ -60,15 +60,6 @@
     opacity: 0.8;
 }
 
-@mixin article_paragraph_desk {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: calc(var(--base-font-size) + 4px);
-    line-height: calc(var(--base-line-height));
-    opacity: 0.8;
-}
-
 @mixin testimonial_name {
     font-family: 'Open Sans';
     font-style: normal;
