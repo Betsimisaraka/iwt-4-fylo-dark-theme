@@ -16,6 +16,10 @@ body, h1, h2, h3, h4, p, ul, li, img {
     padding: 0;
 }
 
+.site_header {
+    background-color: var(--testimonials-background);
+}
+
 ul {
     list-style: none;
 }

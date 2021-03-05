@@ -1,5 +1,5 @@
 .footer {
-    padding-top: calc(var(--base-padding) * 4);
+    padding-top: calc(var(--base-padding) * 6);
     padding-bottom: var(--base-padding);
     background-color: var(--footer-background);
     text-align: left;
@@ -83,6 +83,7 @@
 
 @media (min-width: 1000px) {
     .footer {
+        padding-top: calc(var(--base-padding) * 5);
         padding-bottom: calc(var(--base-padding) * 2);
         & .footer_container {
             display: grid;

@@ -1,6 +1,6 @@
 .site_header {
     padding-left: var(--base-margin);
-    margin-right: var(--base-margin);
+    padding-right: var(--base-margin);
     padding-top: var(--base-padding);
     padding-bottom: var(--base-padding);
     @include flex-row;

@@ -1,6 +1,6 @@
 .security {
     padding-top: calc(var(--base-padding) * 2);
-    padding-bottom: calc(var(--base-padding) * 2);    
+    padding-bottom: calc(var(--base-padding) * 2);  
     & .security_list .security_list__item + .security_list__item {
         padding-top: calc(var(--base-padding) * 2);
     }

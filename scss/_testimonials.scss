@@ -1,6 +1,12 @@
 .testimonials {
     padding-top: calc(var(--base-padding) );
-    padding-bottom: calc(var(--base-padding) * 2);
+    padding-bottom: calc(var(--base-padding) * 8);
+    & .testimonials_container {
+        background-image: url('../images/bg-quotes.png');
+        background-repeat: no-repeat;
+        background-size: 3rem;
+        padding-top: calc(var(--base-padding) - 10px);
+    }
     & .testimonial_list {
         & .testimonials_list__items {
             background-color: var(--testimonials-background);
@@ -39,7 +45,7 @@
 @media (min-width: 1000px) {
     .testimonials {
         padding-top: calc(var(--base-padding) );
-        padding-bottom: calc(var(--base-padding) * 2);
+        padding-bottom: calc(var(--base-padding) * 7);
         & .testimonial_list {
            @include flex_row;
             & .testimonials_list__items + .testimonials_list__items {
